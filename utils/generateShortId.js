@@ -10,7 +10,7 @@ const crypto = require('crypto');
 
 const generateShortId = (length = 6) => {
       // Generate random bytes, convert to base64, remove non-alphanumeric chars, and slice
-        return crypto.randomBytes(Math.ceil(length / 2))
+        return crypto.randomBytes(Math.ceil(length * 0.5))
             .toString('base64') // Convert to base64
             .replace(/\+/g, '0') // replace '+' with '0'                
             .replace(/\//g, '1') // replace '/' with '1'    
