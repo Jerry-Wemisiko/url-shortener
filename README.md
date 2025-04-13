@@ -14,11 +14,41 @@ A simple and efficient URL Shortener built with **Node.js**, **Express**, and **
 
 ## 🛠 Tech Stack
 
-- **Backend**: Node.js, Express
+- **Backend**: Node.js, Express,- crypto (built-in)
 - **Database**: MongoDB (via Mongoose)
-- **Validation**: validator.js
 - **Environment**: dotenv
 
+<<<<<<< HEAD
+=======
+## Project Structure
+
+url-shortener/
+├── config/              # Configuration files (env, db, etc.)
+│   └── db.js
+│   └── index.js
+├── controllers/         # Business logic
+│   └── urlController.js
+├── models/              # Database models
+│   └── Url.js
+├── routes/              # Route definitions
+│   └── urlRoutes.js
+├── middlewares/         # Custom middleware (error handling, auth, etc.)
+│   └── errorHandler.js
+├── services/            # Services (e.g., URL generation, Redis, etc.)
+│   └── urlService.js
+├── utils/               # Utility functions (e.g., ID generator)
+│   └── generateShortId.js
+├── .env                 # Environment variables
+├── .gitignore
+├── package.json
+├── server.js            # App entry point
+└── README.md
+
+## 🧠 Credits
+Built by Jerry Wemisiko with ❤️
+Ready to scale, extend, and deploy.
+
+>>>>>>> 2da29a5 (final backend version of the project)
 ## ⚙️ Installation
 
 1. **Clone the repository**

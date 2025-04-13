@@ -12,7 +12,7 @@ const BASE_URL = process.env.BASE_URL // get the base URL from the environment v
  
 const createShortUrl = async (originalUrl) => {
     ///check if the priginal url has already been shortened before
-    const existing = awit = await Url.findOne({originalUrl});
+    const existing = await Url.findOne({ originalUrl });
     if (existing ){
         return existing; // reuse existing shortened URL to prevent duplicates
     }
