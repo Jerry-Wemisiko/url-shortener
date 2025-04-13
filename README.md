@@ -19,31 +19,6 @@ A simple and efficient URL Shortener built with **Node.js**, **Express**, and **
 - **Validation**: validator.js
 - **Environment**: dotenv
 
-## Project Structure
-
-url-shortener/
-├── config/              # Configuration files (env, db, etc.)
-│   └── db.js
-│   └── index.js
-├── controllers/         # Business logic
-│   └── urlController.js
-├── models/              # Database models
-│   └── Url.js
-├── routes/              # Route definitions
-│   └── urlRoutes.js
-├── middlewares/         # Custom middleware (error handling, auth, etc.)
-│   └── errorHandler.js
-├── services/            # Services (e.g., URL generation, Redis, etc.)
-│   └── urlService.js
-├── utils/               # Utility functions (e.g., ID generator)
-│   └── generateShortId.js
-├── .env                 # Environment variables
-├── .gitignore
-├── package.json
-├── server.js            # App entry point
-└── README.md
-
-
 ## ⚙️ Installation
 
 1. **Clone the repository**
