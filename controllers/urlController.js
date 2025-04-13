@@ -10,7 +10,8 @@ const {createShortUrl, getOriginalUrl} = require('../services/urlService');
  * @access Public
  */
 
-const shortenUrl = async (req, res) => {
+const shortenUrl = async (req, res) => { 
+     //shortenUrl(req, res): Accepts a long URL and returns a shortened version.
     const {originalUrl} = req.body;
 
     //Validate input URL - error handling
@@ -35,6 +36,7 @@ const shortenUrl = async (req, res) => {
  */
 
 const redirectToOriginal = async (req, res) => {
+    //redirectToOriginal(req, res): Takes a short/unique ID and redirects to the original URL.
     const {shortId} = req.params;
 
     try{
